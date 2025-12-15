@@ -3,7 +3,7 @@ on:
   pull_request:
     paths:
       - '**.yml'
-      - '!test/**'
+      - '!**/test/**.yml'
 jobs:
   job_ex2:
     runs-on: ubuntu-latest
