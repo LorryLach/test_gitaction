@@ -1,5 +1,4 @@
 name: Exercice 1
-
 on:
   push:
   pull_request:
@@ -8,6 +7,5 @@ on:
 jobs:
   job_ex1:
     runs-on: unbuntu-latest
-
     steps:
     - run: echo "Je teste l'ex 1"
