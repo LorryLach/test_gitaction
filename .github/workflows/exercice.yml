@@ -1,0 +1,13 @@
+name: Exercice 1
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+jobs:
+  job_ex1:
+    runs-on: unbuntu-latest
+
+    steps:
+    - run: echo "Je teste l'ex 1"
