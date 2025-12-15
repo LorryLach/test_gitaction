@@ -1,0 +1,11 @@
+name: Exercice 2
+on:
+  pull_request:
+    paths:
+      - '**.yml'
+      - '!test/**'
+jobs:
+  job_ex2:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Je teste l'ex 2, les fichier YAMAL"
