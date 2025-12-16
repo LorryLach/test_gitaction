@@ -8,7 +8,6 @@ job:
  NOMVARIABLE: salut
  steps:
  - run: echo $VARIABLE
- - run: echo $VARIABLE
  - id: monStep
- run: echo "::set-output name=NOMVARIABLE::hello"
-   - run: echo **${{ steps.monStep.outputs.NOMVARIABLE }}**
+   run: echo "::set-output name=NOMVARIABLE::hello"
+ - run: echo **${{ steps.monStep.outputs.NOMVARIABLE }}**
