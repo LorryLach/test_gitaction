@@ -1,4 +1,4 @@
-name : ex-var
+name : ExVar
 on:  
   workflow_dispatch:
 job:
@@ -11,4 +11,4 @@ job:
  - run: echo $VARIABLE
  - id: monStep
  run: echo "::set-output name=NOMVARIABLE::hello"
- - run: echo **${{ steps.monStep.outputs.NOMVARIABLE }}**
+   - run: echo **${{ steps.monStep.outputs.NOMVARIABLE }}**
