@@ -5,9 +5,12 @@ job:
  runs-on: ubuntu-latest
  env:
  VARIABLE: jaune
+ NOMVARIABLE: salut
  steps:
  - run: echo $VARIABLE
  - run: |
-   echo "VARIABLE=vert" >> $GITHUB_ENV
    echo $VARIABLE
  - run: echo $VARIABLE
+ - id: monStep
+ run: echo "::set-output name=NOMVARIABLE::hello"
+ - run: echo **${{ steps.monStep.outputs.NOMVARIABLE }}**
